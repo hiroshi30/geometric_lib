@@ -8,6 +8,10 @@ def area(a, b):
         S (float) или (int) - значение площади прямоугольника,
             (float), если a или b (float),
             (int), если a и b (int).
+    Пример вызова:
+        area(1, 2)
+    Вернёт:
+        2
     '''
     return a * b
 
@@ -22,5 +26,9 @@ def perimeter(a, b):
         P (float) или (int) - значение периметра прямоугольника,
             (float), если a или b (float),
             (int), если a и b (int).
+    Пример вызова:
+        perimeter(1, 2)
+    Вернёт:
+        6
     '''
     return 2 * (a + b)
