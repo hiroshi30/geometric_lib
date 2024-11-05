@@ -13,6 +13,19 @@ def area(a, b):
     Вернёт:
         2
     '''
+    if (type(a) != int) and (type(a) != float):
+        print(f'WARNING in rectangel.area(): "a" must be int or float type but not {type(a).__name__}')
+        return -1
+    if (type(b) != int) and (type(b) != float):
+        print(f'WARNING in rectangel.area(): "b" must be int or float type but not {type(b).__name__}')
+        return -1
+    if a <= 0:
+        print(f'WARNING in rectangel.area(): "a" <= 0, "a" == {a}')
+        return -1
+    if b <= 0:
+        print(f'WARNING in rectangel.area(): "b" <= 0, "b" == {b}')
+        return -1
+
     return a * b
 
 
@@ -31,4 +44,17 @@ def perimeter(a, b):
     Вернёт:
         6
     '''
+    if (type(a) != int) and (type(a) != float):
+        print(f'WARNING in rectangel.perimeter(): "a" must be int or float type but not {type(a).__name__}')
+        return -1
+    if (type(b) != int) and (type(b) != float):
+        print(f'WARNING in rectangel.perimeter(): "b" must be int or float type but not {type(b).__name__}')
+        return -1
+    if a <= 0:
+        print(f'WARNING in rectangel.perimeter(): "a" <= 0, "a" == {a}')
+        return -1
+    if b <= 0:
+        print(f'WARNING in rectangel.perimeter(): "b" <= 0, "b" == {b}')
+        return -1
+    
     return 2 * (a + b)
